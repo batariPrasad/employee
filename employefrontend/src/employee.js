@@ -229,8 +229,8 @@ const EmployeeForm = () => {
     return (
         <div className="container">
             <div className="row mt-5">
-                <div className="col-lg-4"></div>
-                <div className="col-lg-4">
+                <div className="col-lg-3"></div>
+                <div className="col-lg-6">
                     <div className="card">
                         <div className="card-header text-center">Create Employee</div>
 
@@ -381,7 +381,7 @@ const EmployeeForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4"></div>
+                <div className="col-lg-3"></div>
             </div>
 
             {/* Employee Table */}
