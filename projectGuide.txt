@@ -1,0 +1,57 @@
+########## Project Guide ########
+    Author : venkata prasad
+    Mobile : 7095949481
+    Publish Date : 15-11-2024
+
+########## About Project ########
+    Employee Internship
+    Technologies
+        Frontend
+            1. HTML
+            2. CSS 
+            3. Bootstrap 5
+            4. React (JSX)
+        Backend 
+            1. Mongo db
+	    2. Expess.js
+	    3. node.js
+	    4. react.js
+    
+########## How To Setup and Run The Project ##########
+    1. Download React Project Source Code : https://github.com/cybotrix/live-project/archive/refs/heads/main.zip
+    2. Download Api Source Code : https://github.com/cybotrix/api/archive/refs/heads/main.zip
+
+Note : Steps to setup the project 
+    1. download source code from above url 
+    2. unzip/extract both the folder 
+    3. install nodejs 18+ version in your system
+    4. install react development environment using bellow command 
+        npm install -g create-react-app 
+   5. install mongo db 
+
+    6. install Node package models for backend
+		1.npm install express
+		2.npm install cors	
+		3.npm install bootstrap
+		4.npm install multer
+		5.npm install react-router-dom
+		6.npm install mongoose
+       
+    7. start the backend server by using below command
+
+	Open cmd in employeebackend floder and run this command
+      
+           nodemon server
+        
+    8. start react development server 
+        a. open cmd in react project folder that is "employeefrontend" and run this command 
+            npm start 
+
+        Note : You can browser http://localhost:3000
+    
+    Thanks For Your Time to see my project. 
+
+    I hope for positive response from your side 
+     Venkata prasad 7095949481
+######################################################################################
+
