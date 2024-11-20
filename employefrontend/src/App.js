@@ -1,8 +1,9 @@
 import { HashRouter, Route, Routes, Link } from 'react-router-dom'
-import Login from './login';
 import Register from './register';
-import EmployeeForm from './employee';
+import EmployeeForm from './employeeform';
 import EmployeeDetails from './employeedetails';
+import Update from './updateemployee';
+
 function App() {
     return (
         <HashRouter>
@@ -17,17 +18,20 @@ function App() {
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 
 
-                            <li className="nav-item me-4">
+                            {/* <li className="nav-item me-4">
                                 <Link className="nav-link active" to="/"> <i className="fa fa-edit"> </i> Register </Link>
+                            </li> */}
+                            <li className="nav-item me-4">
+                                <Link className="nav-link active" to=""> <i className="fa fa-user"> </i> Create Employee </Link>
+                            </li>
+            
+                            <li className="nav-item me-4">
+                                <Link className="nav-link active" to="data"> <i className="fa fa-info"> </i> Employee details </Link>
                             </li>
                             <li className="nav-item me-4">
-                                <Link className="nav-link active" to="employee"> <i className="fa fa-user"> </i> Employee </Link>
+                                <Link className="nav-link active" to="update"> <i className="fa fa-edit"> </i> Employee update </Link>
                             </li>
                           
-                            {/* <li className="nav-item me-4">
-                                <Link className="nav-link active" to="data"> <i className="fa fa-user"> </i> Employee details </Link>
-                            </li>
-                           */}
                             <button className='btn btn-info' onClick={logoutme}>
                                 Hi, {localStorage.getItem("myname")}-Logout
                             </button>
@@ -38,9 +42,11 @@ function App() {
             </nav>
 
             <Routes>
-                <Route exact path='/' element={<Register />} />
-                <Route exact path='employee' element={<EmployeeForm />} />
-                {/* <Route exact path='data' element={<EmployeeDetails />} /> */}
+                {/* <Route exact path='/' element={<Register />} /> */}
+                <Route exact path='' element={<EmployeeForm />} />
+                <Route exact path='data'  element={<EmployeeDetails/>} />
+                <Route exact path='update'  element={<  Update/>} />
+    
                
             </Routes>
 
